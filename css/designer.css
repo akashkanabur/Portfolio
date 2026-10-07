@@ -1,0 +1,978 @@
+@font-face {
+    font-family: "Media";
+    src: url('font\ 1.otf');
+}
+@font-face {
+    font-family: "SF Pro";
+    src: url('font\ 2.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  display: none; 
+}
+::selection{
+  background-color: #f78c00;
+  color: black;
+}
+
+.button-loader{
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+.lft-slide{
+  width: 50%;
+  height: 100%;
+  background-color: #191919;
+  position: absolute;
+  left: -100%;
+}
+.rgt-slide{
+  width: 50%;
+  height: 100%;
+  background-color: #191919;
+  position: absolute;
+  right: -100%;
+}
+
+
+
+
+/* <====================================================== Loader Coded Here ======================================================> */
+
+
+.loader{
+  width: 100%;
+  height: 100vh;
+  background-color: #1B1B1B;
+  position: fixed;
+  z-index: 999;
+}
+
+
+
+nav {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(45deg, #0e3771, #ffffff, #8e8e8e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 90;
+}
+
+.nav_logo {
+    width: 12%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav_logo img {
+    width: 100%;
+    height: 230%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 35px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 650;
+    font-family: "SF Pro";
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #000000;
+}
+
+a.contact_btn{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: black;
+    display: flex;
+    font-family: "SF Pro";
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    transform-origin: center;
+    transition: .5s ease;
+}
+a.contact_btn:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+}
+
+.herobox{
+    width:100%;
+    height: 60vh;
+    background: linear-gradient(80deg, #0e3771, #ffffff, #8e8e8e);
+    border-style: none;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.herobox h1{
+    font-family: "Media";
+    font-size: 85px;
+    letter-spacing: 3px;
+    text-align: center;
+    width:80%;
+    margin-top: 20px;
+}
+.herobox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+    height:55px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "SF Pro";
+    color: black;
+    margin-top: 30px;
+    transform-origin: center;
+    transition: .3s ease;
+}
+.herobox a:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.336);
+}
+
+.section-1{
+    width: 100%;
+    height: 160vh;
+    background-color:white;
+    position: relative;
+}
+
+.section-1{
+  width: 100%;
+  height: 160vh;
+  background: linear-gradient(95deg, #0e3771, #ffffff, #8e8e8e);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container{
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  border-color: black;
+  border-radius: 20px;
+  top: 5%;
+}
+.card-1{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card-1:hover img{
+  transform: scale(1.1);
+}
+.card-1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+.card-2{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 7%;
+  top: 5%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-2:hover img{
+  transform: scale(1.1);
+}
+.card-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-3{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 24%;
+  top: 12%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-3:hover img{
+  transform: scale(1.1);
+}
+.card-3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-4{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 42%;
+  top: 20%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-4:hover img{
+  transform: scale(1.1);
+}
+.card-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-5{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 60%;
+  top: 12%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-5:hover img{
+  transform: scale(1.1);
+}
+.card-5 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-6{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 77%;
+  top: 5%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-6:hover img{
+  transform: scale(1.1);
+}
+.card-6 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-7{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  right: -10%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-7:hover img{
+  transform: scale(1.1);
+}
+.card-7 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+
+.section-1 h1{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:60%;
+    opacity: 0%;
+    font-family: "Media";
+    font-size: 52px;
+}
+
+.section-1 p.p1{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:68%;
+    font-size: 28px;
+    text-align: center;
+    font-family: "SF Pro";
+}
+
+.section-1 p.p2{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:78%;
+    font-size: 28px;
+    font-family: "SF Pro";
+    text-align: center;
+}
+.section p.p2 strong{
+    color: goldenrod;
+}
+
+
+.section-2{
+  width: 100%;
+  height: 120vh;
+  background-color: #1B1B1B;
+  position: relative;
+}
+.section-2 h1{
+  position: absolute;
+  color: white;
+  font-family: "Media";
+  font-size: 55px;
+  letter-spacing: 1px;
+  top: 10%;
+  left: 10%;
+}
+.carousel-wrapper{
+  width: 80%;
+  height: 62%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  /* border: 2px solid white; */
+}
+.slides-holder{
+  width: 236%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+.slide{
+  width: 13%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.overlay{
+  width: 100%;
+  height: 0%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) -34%, rgba(38,38,38,0.87718837535014) 0%, rgba(17,17,17,0.8715861344537815) 100%);
+  position: absolute;
+  z-index: 5;
+  transition: .5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0%;
+
+}
+.overlay a{
+  text-decoration: none;
+}
+.overlay i{
+  font-size: 25px;
+  margin: 0 15px;
+  background-color: white;
+  color: #1B1B1B;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+}
+.overlay i:hover{
+  background-color: #f78c00;
+  color: white;
+}
+.slide:hover .overlay{
+  height: 100%;
+  opacity: 100%;
+}
+
+.tool-github{
+  width: 170px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 56%;
+  border-radius: 50px;
+  left: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro";
+  font-weight: 800;
+  letter-spacing: 2px;
+  opacity: 0%;
+  transition: .5s ease;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: .5s ease;
+  position: absolute;
+}
+.left-button{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.left-button::before{
+  content: "";
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 100%;
+  top: -100%;
+  transition: .5s ease;
+}
+.left-button:hover i{
+  color: #1B1B1B;
+}
+.left-button:hover::before{
+  left:0%;
+  top: 0%;
+}
+.left-button i{
+  pointer-events: none;
+  transition: .5s ease;
+  z-index: 80;
+}
+
+.right-button{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.right-button::before{
+  content: "";
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 100%;
+  top: -100%;
+  transition: .5s ease;
+}
+.right-button:hover i{
+  color: #1B1B1B;
+}
+.right-button:hover::before{
+  left:0%;
+  top: 0%;
+}
+.right-button i{
+  pointer-events: none;
+  transition: .5s ease;
+  z-index: 80;
+}
+
+
+.section-7{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #1B1B1B;
+  position: relative;
+}
+.section-7 h2{
+  position: absolute;
+  z-index: 50;
+  font-family: "SF Pro";
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #f78c00;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35%;
+}
+.section-7 h1{
+  font-family: "Media";
+  font-size: 50px;
+  z-index: 50;
+  letter-spacing: 3px;
+  position: absolute;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+.section-7 p{
+  position: absolute;
+  z-index: 50;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "SF Pro";
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+  top: 52%;
+}
+.section-7 a{
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: white;
+  font-family: "SF Pro";
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 63%;
+  transform-origin: center;
+  transition: .3s ease;
+}
+.section-7 a:hover{
+  width: 220px;
+}
+.section-7::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1bd3;
+  position: absolute;
+}
+.col-section-7{
+  width: 24%;
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: -87%;
+}
+.card-1-section-7{
+  width: 100%;
+  height: 32%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-1-section-7 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====================================================== Responsive Design ====================================================== */
+
+/* Tablet Styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 50px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    nav a.contact_btn {
+        width: 130px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .herobox {
+        height: 50vh;
+        padding: 0 50px;
+    }
+
+    .herobox h1 {
+        font-size: 70px;
+    }
+
+    .herobox a {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .section-1 {
+        height: 140vh;
+        padding: 0 30px;
+    }
+
+    .card-container {
+        height: 450px;
+    }
+
+    .section-1 h1 {
+        font-size: 45px;
+    }
+
+    .section-1 p.p1,
+    .section-1 p.p2 {
+        font-size: 24px;
+    }
+
+    .section-2 {
+        height: 100vh;
+    }
+
+    .section-2 h1 {
+        font-size: 45px;
+        left: 5%;
+    }
+
+    .carousel-wrapper {
+        width: 90%;
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        height: 80px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    nav a.contact_btn {
+        width: 120px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .herobox {
+        height: 40vh;
+        padding: 0 20px;
+    }
+
+    .herobox h1 {
+        font-size: 50px;
+        line-height: 1.1;
+    }
+
+    .herobox a {
+        width: 160px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .section-1 {
+        height: 120vh;
+        padding: 0 20px;
+    }
+
+    .card-container {
+        height: 350px;
+        top: 10%;
+    }
+
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
+        width: 20%;
+        height: 60%;
+    }
+
+    .section-1 h1 {
+        font-size: 35px;
+        top: 65%;
+    }
+
+    .section-1 p.p1,
+    .section-1 p.p2 {
+        font-size: 18px;
+    }
+
+    .section-1 p.p1 {
+        top: 72%;
+    }
+
+    .section-1 p.p2 {
+        top: 80%;
+    }
+
+    .section-2 {
+        height: 80vh;
+    }
+
+    .section-2 h1 {
+        font-size: 35px;
+        left: 5%;
+        top: 8%;
+    }
+
+    .carousel-wrapper {
+        width: 95%;
+        height: 50%;
+        top: 50%;
+    }
+
+    .slides-holder {
+        width: 300%;
+    }
+
+    .slide {
+        width: 18%;
+    }
+
+    .left-button,
+    .right-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .section-7 {
+        height: 60vh;
+    }
+
+    .section-7 h1 {
+        font-size: 35px;
+    }
+
+    .section-7 p {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .section-7 a {
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 0 15px;
+        height: 70px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 8px;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    nav a.contact_btn {
+        width: 100px;
+        height: 35px;
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .herobox {
+        height: 35vh;
+        padding: 0 15px;
+    }
+
+    .herobox h1 {
+        font-size: 35px;
+    }
+
+    .herobox a {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .section-1 {
+        height: 100vh;
+        padding: 0 15px;
+    }
+
+    .card-container {
+        height: 250px;
+        top: 15%;
+    }
+
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
+        width: 25%;
+        height: 50%;
+    }
+
+    .section-1 h1 {
+        font-size: 28px;
+        top: 70%;
+    }
+
+    .section-1 p.p1,
+    .section-1 p.p2 {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .section-2 {
+        height: 70vh;
+    }
+
+    .section-2 h1 {
+        font-size: 28px;
+        left: 5%;
+        top: 5%;
+    }
+
+    .carousel-wrapper {
+        width: 98%;
+        height: 45%;
+        top: 45%;
+    }
+
+    .slides-holder {
+        width: 400%;
+    }
+
+    .slide {
+        width: 22%;
+    }
+
+    .left-button,
+    .right-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .section-7 {
+        height: 50vh;
+    }
+
+    .section-7 h1 {
+        font-size: 28px;
+    }
+
+    .section-7 p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .section-7 a {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+
+

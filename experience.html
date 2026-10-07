@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="icon" type="image" href="images/loading(1).png">
+    <title>Experience — Akash | Software Engineer</title>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav id="exp-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html" class="nav-active">Experience</a></li>
+            <li><a href="Akash_Kanabur-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+        <a href="mailto:akashkanabur@gmail.com" class="contact_btn">Contact Me</a>
+    </nav>
+
+    <div class="toggle-icon" id="exp-toggle-icon">
+        <img src="images/toggle Icon White Screen.png" alt="Toggle menu">
+    </div>
+    <div class="toggle-menu" id="exp-toggle-menu">
+        <div class="toggle-icon-black" id="exp-toggle-close">
+            <img src="images/toggle Icon.png" alt="Close menu">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html" class="nav-active">Experience</a></li>
+            <li><a href="Akash-Final.pdf" target="_blank" rel="noopener">Resume</a></li>
+            <li><a href="mailto:akashkanabur@gmail.com">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- ============================================================ HERO ============================================================ -->
+    <section class="exp-hero">
+        <div class="exp-hero-bg">
+            <div class="exp-glow exp-glow-1"></div>
+            <div class="exp-glow exp-glow-2"></div>
+            <canvas class="exp-particles" id="expParticles"></canvas>
+        </div>
+        <div class="exp-hero-layout">
+            <div class="exp-hero-content">
+                <span class="exp-hero-label reveal-up">PROFESSIONAL JOURNEY</span>
+                <h1 class="exp-hero-title reveal-up">EXPERIENCE</h1>
+                <p class="exp-hero-desc reveal-up">A journey through software development, professional internships, and continuous engineering growth.</p>
+            </div>
+
+            <div class="exp-hero-visual">
+                <div class="exp-sev exp-sev-code">
+                    <div class="exp-sev-bar">
+                        <span class="exp-tb-dot exp-tb-red"></span>
+                        <span class="exp-tb-dot exp-tb-yellow"></span>
+                        <span class="exp-tb-dot exp-tb-green"></span>
+                        <span class="exp-sev-bar-title">main.tsx</span>
+                    </div>
+                    <div class="exp-sev-code-body">
+                        <span class="exp-code-kw">const</span> app = <span class="exp-code-fn">build</span>();<br>
+                        <span class="exp-code-kw">await</span> app.<span class="exp-code-fn">deploy</span>();
+                    </div>
+                </div>
+                <div class="exp-sev exp-sev-terminal">
+                    <div class="exp-sev-bar">
+                        <span class="exp-tb-dot exp-tb-red"></span>
+                        <span class="exp-tb-dot exp-tb-yellow"></span>
+                        <span class="exp-tb-dot exp-tb-green"></span>
+                        <span class="exp-sev-bar-title">terminal</span>
+                    </div>
+                    <div class="exp-sev-term-body">
+                        <span class="exp-t-green">$</span> git push origin main<br>
+                        <span class="exp-t-blue">&#8594;</span> deployed &#10003;
+                        <span class="exp-t-cursor">&#9611;</span>
+                    </div>
+                </div>
+                <div class="exp-sev exp-sev-api">
+                    <div class="exp-sev-api-method">GET</div>
+                    <div class="exp-sev-api-path">/api/v1/data</div>
+                    <div class="exp-sev-api-status">200 OK</div>
+                </div>
+                <div class="exp-sev exp-sev-db">
+                    <i class="fa-solid fa-database"></i>
+                    <div class="exp-sev-db-pulse"></div>
+                </div>
+                <div class="exp-sev exp-sev-mobile">
+                    <div class="exp-sev-mobile-notch"></div>
+                    <div class="exp-sev-mobile-screen">
+                        <div class="exp-sev-mobile-bar"></div>
+                        <div class="exp-sev-mobile-card"></div>
+                        <div class="exp-sev-mobile-card exp-sev-mobile-card-sm"></div>
+                    </div>
+                </div>
+                <div class="exp-sev exp-sev-web">
+                    <div class="exp-sev-web-nav"></div>
+                    <div class="exp-sev-web-grid">
+                        <div class="exp-sev-web-block"></div>
+                        <div class="exp-sev-web-block"></div>
+                        <div class="exp-sev-web-block exp-sev-web-block-wide"></div>
+                    </div>
+                </div>
+                <div class="exp-sev exp-sev-git">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <div class="exp-sev-git-commits">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="exp-sev exp-sev-cloud">
+                    <i class="fa-solid fa-cloud"></i>
+                    <div class="exp-sev-cloud-servers">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-hero-scroll">
+            <span>Scroll</span>
+            <div class="exp-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================================ STATS ============================================================ -->
+    <section class="exp-stats">
+        <div class="exp-stats-inner">
+            <div class="exp-stat reveal-up">
+                <span class="exp-stat-num" data-target="1">0</span>
+                <p class="exp-stat-label">INTERNSHIP EXPERIENCE</p>
+            </div>
+            <div class="exp-stat-divider"></div>
+            <div class="exp-stat reveal-up">
+                <span class="exp-stat-num" data-target="1">0</span>
+                <p class="exp-stat-label">AWS CERTIFICATION</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ TIMELINE ============================================================ -->
+    <section class="exp-timeline-section">
+        <div class="exp-section-header reveal-up">
+            <span class="exp-section-tag">WORK HISTORY</span>
+            <h2 class="exp-section-title">Professional Experience</h2>
+            <p class="exp-section-desc">Experiences where I worked on real applications, websites, debugging, infrastructure migration, and software development.</p>
+        </div>
+
+        <div class="exp-timeline">
+            <div class="exp-timeline-line" id="timelineLine">
+                <div class="exp-timeline-line-fill" id="timelineLineFill"></div>
+            </div>
+
+            <!-- IISc FEATURED -->
+            <div class="exp-timeline-item exp-item-featured reveal-up" data-index="1">
+                <div class="exp-timeline-node">
+                    <div class="exp-node-ring"></div>
+                    <div class="exp-node-dot"></div>
+                </div>
+                <div class="exp-card exp-card-featured">
+                    <span class="exp-featured-label">FEATURED EXPERIENCE</span>
+                    <div class="exp-card-meta">
+                        <span class="exp-card-index">01</span>
+                        <span class="exp-card-duration">Nov 2025 &#8212; Apr 2026</span>
+                    </div>
+                    <h3 class="exp-card-title">Full Stack Web Intern</h3>
+                    <p class="exp-card-org">Design Centre of Excellence (D-CoE)<br><span>Indian Institute of Science (IISc)</span></p>
+                    <p class="exp-card-desc">Worked across application and website development, integrated a missing payment gateway, led infrastructure migration from GCP to Supabase, and tested APIs using Postman while debugging issues across the stack.</p>
+
+                    <!-- WHAT I WORKED ON -->
+                    <div class="exp-work-showcase">
+                        <h4 class="exp-work-heading">WHAT I WORKED ON</h4>
+                        <div class="exp-work-showcase-grid">
+
+                            <!-- 1. Payment Gateway -->
+                            <div class="exp-work-card">
+                                <div class="exp-work-card-visual exp-wcv-stack">
+                                    <div class="exp-wcv-stack-layer"><span>Checkout UI</span><div class="exp-wcv-stack-arrow">&#8595;</div></div>
+                                    <div class="exp-wcv-stack-layer"><span>Payment API</span><div class="exp-wcv-stack-arrow">&#8595;</div></div>
+                                    <div class="exp-wcv-stack-layer"><span>Gateway &#10003;</span></div>
+                                    <div class="exp-wcv-stack-pulse"></div>
+                                </div>
+                                <div class="exp-work-card-content">
+                                    <strong>Payment Gateway Integration</strong>
+                                    <p>Integrated a payment gateway system that was missing from the website, enabling end-to-end transaction flow.</p>
+                                </div>
+                            </div>
+
+                            <!-- 2. GCP to Supabase -->
+                            <div class="exp-work-card">
+                                <div class="exp-work-card-visual exp-wcv-bug">
+                                    <div class="exp-wcv-flow">
+                                        <div class="exp-wcv-flow-step exp-wcv-flow-active">GCP</div>
+                                        <div class="exp-wcv-flow-arrow">&#8595;</div>
+                                        <div class="exp-wcv-flow-step">MIGRATION</div>
+                                        <div class="exp-wcv-flow-arrow">&#8595;</div>
+                                        <div class="exp-wcv-flow-step">SUPABASE</div>
+                                        <div class="exp-wcv-flow-arrow">&#8595;</div>
+                                        <div class="exp-wcv-flow-step">&#8377;8000 / mo saved</div>
+                                    </div>
+                                </div>
+                                <div class="exp-work-card-content">
+                                    <strong>GCP &#8594; Supabase Migration</strong>
+                                    <p>Led the shift from GCP to Supabase, reducing monthly infrastructure costs by &#8377;8,000.</p>
+                                </div>
+                            </div>
+
+                            <!-- 3. API Testing -->
+                            <div class="exp-work-card">
+                                <div class="exp-work-card-visual exp-wcv-web">
+                                    <div class="exp-wcv-browser">
+                                        <div class="exp-wcv-browser-bar">
+                                            <span class="exp-tb-dot exp-tb-red"></span>
+                                            <span class="exp-tb-dot exp-tb-yellow"></span>
+                                            <span class="exp-tb-dot exp-tb-green"></span>
+                                            <div class="exp-wcv-url">Postman</div>
+                                        </div>
+                                        <div class="exp-wcv-browser-body">
+                                            <div class="exp-wcv-api-indicator"><span>POST /api/payment</span><span class="exp-wcv-api-dot"></span></div>
+                                            <div class="exp-wcv-api-indicator" style="margin-top:6px"><span>200 OK</span><span class="exp-wcv-api-dot"></span></div>
+                                            <div class="exp-wcv-code-panel"><span></span><span></span><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exp-work-card-content">
+                                    <strong>API Testing &amp; Debugging</strong>
+                                    <p>Tested APIs using Postman, identified errors, and debugged issues across the application stack.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Tools & Technologies -->
+                    <div class="exp-tools-section">
+                        <h4 class="exp-tech-heading">Tools &amp; Technologies</h4>
+                        <div class="exp-tech-pills exp-tech-pills-animated">
+                            <span class="exp-pill exp-pill-tech"><i class="fa-brands fa-android"></i> Android</span>
+                            <span class="exp-pill exp-pill-tech"><i class="fa-solid fa-code"></i> Kotlin</span>
+                            <span class="exp-pill exp-pill-tech"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="exp-pill exp-pill-tech"><i class="fa-brands fa-react"></i> React</span>
+                            <span class="exp-pill exp-pill-tech"><i class="fa-solid fa-code"></i> TypeScript</span>
+                            <span class="exp-pill exp-pill-tech"><i class="fa-solid fa-database"></i> Supabase</span>
+                            <span class="exp-pill exp-pill-tech"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="exp-reflection">
+                        <p>Grateful to share that I've successfully completed my internship at the Center of Excellence for Design (DCoE) at Indian Institute of Science.</p>
+                        <p>This marks my first step into corporate life, and I couldn't have asked for a better place to begin this journey. The experience was truly enriching — from learning new skills to working in such a collaborative and inspiring environment.</p>
+                        <p>A special thanks to K Joshil Raj, Ph.D for giving me this wonderful opportunity. Your support made a huge difference in my journey.</p>
+                        <p>The environment at IISc was incredibly welcoming — with supportive employees and amazing fellow interns who made this experience even more memorable. It's a place I'll always look forward to coming back to and visiting again.</p>
+                        <p>This internship will always remain a special milestone for me.<br>Thank you :)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================ CERTIFICATIONS ============================================================ -->
+    <section class="exp-cert-section">
+        <div class="exp-section-header reveal-up">
+            <span class="exp-section-tag">CREDENTIALS</span>
+            <h2 class="exp-section-title">Certifications</h2>
+            <p class="exp-section-desc">Professional certifications that complement my software engineering journey.</p>
+        </div>
+
+        <div class="exp-cert-card reveal-up">
+            <div class="exp-cert-badge-area">
+                <div class="exp-cert-badge-placeholder">
+                    <div class="exp-badge-cloud exp-badge-cloud-1"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="exp-badge-cloud exp-badge-cloud-2"><i class="fa-solid fa-server"></i></div>
+                    <div class="exp-badge-ring exp-badge-ring-1"></div>
+                    <div class="exp-badge-ring exp-badge-ring-2"></div>
+                    <div class="exp-badge-ring exp-badge-ring-3"></div>
+                    <div class="exp-badge-inner">
+                        <img src="image771495085737125892.webp" alt="AWS Certified Badge" class="exp-badge-img">
+                    </div>
+                </div>
+            </div>
+            <div class="exp-cert-info">
+                <div class="exp-cert-issuer">Amazon Web Services</div>
+                <h3 class="exp-cert-title">AWS Certified Cloud Practitioner</h3>
+                <p class="exp-cert-code">CLF-C02 &nbsp;&#183;&nbsp; <span class="exp-cert-status">CERTIFIED</span> &nbsp;&#183;&nbsp; 2026</p>
+                <p class="exp-cert-desc">Demonstrated foundational knowledge of AWS Cloud concepts, core AWS services, security, architecture, pricing, and cloud economics.</p>
+                <div class="exp-cert-buttons">
+                    <a href="AWS Certified Cloud Practitioner certificate.pdf" target="_blank" rel="noopener" class="exp-card-btn">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="AWS Certified Cloud Practitioner certificate.pdf" target="_blank" rel="noopener" class="exp-card-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ CTA ============================================================ -->
+    <!-- ============================================================ HACKATHONS ============================================================ -->
+    <section class="exp-hack-section">
+        <div class="exp-section-header reveal-up">
+            <span class="exp-section-tag">COMPETITIONS</span>
+            <h2 class="exp-section-title">Hackathons</h2>
+            <p class="exp-section-desc">Game jams and hackathons where I built real projects under pressure.</p>
+        </div>
+
+        <div class="exp-hack-list">
+
+            <div class="exp-hack-card reveal-up">
+                <div class="exp-hack-left">
+                    <span class="exp-hack-num">01</span>
+                    <div>
+                        <h3 class="exp-hack-title">GameForge 1.0</h3>
+                        <p class="exp-hack-org">Reva University</p>
+                        <p class="exp-hack-desc">Built a game based on the theme <em>Lost in Time</em>. Won <strong>Best Gameplay</strong> award.</p>
+                        <div class="exp-hack-tags">
+                            <span>UE5</span><span>Blueprints</span><span>Game Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-hack-imgs">
+                    <img src="images/Reva(1).jpg" alt="GameForge 1.0">
+                    <img src="images/Reva(2).jpg" alt="GameForge 1.0">
+                </div>
+            </div>
+
+            <div class="exp-hack-card reveal-up">
+                <div class="exp-hack-left">
+                    <span class="exp-hack-num">02</span>
+                    <div>
+                        <h3 class="exp-hack-title">Gamethon 7.0</h3>
+                        <p class="exp-hack-org">Jyothi Institute of Technology</p>
+                        <p class="exp-hack-desc">Developed a game — <em>Defend Our Fort</em> — using Unreal Engine 5.</p>
+                        <div class="exp-hack-tags">
+                            <span>UE5</span><span>Blueprints</span><span>Team of 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-hack-imgs">
+                    <img src="images/Gamethon7(3).jpg" alt="Gamethon 7.0">
+                    <img src="images/Gamethon7(1).jpg" alt="Gamethon 7.0">
+                </div>
+            </div>
+
+            <div class="exp-hack-card reveal-up">
+                <div class="exp-hack-left">
+                    <span class="exp-hack-num">03</span>
+                    <div>
+                        <h3 class="exp-hack-title">DSATM 8hr Hackathon</h3>
+                        <p class="exp-hack-org">DSATM</p>
+                        <p class="exp-hack-desc">Created a website that finds the best hackathons globally within an 8-hour sprint.</p>
+                        <div class="exp-hack-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-hack-imgs">
+                    <img src="images/Hackathon.jpg" alt="DSATM Hackathon">
+                    <img src="images/HackathonHunt.png" alt="Hackathon Hunt">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================ CTA ============================================================ -->
+    <section class="exp-cta-section reveal-up">
+        <h2 class="exp-cta-title">Take a look at what I've created</h2>
+        <p class="exp-cta-desc">Explore my projects and the engineering problems I've worked on.</p>
+        <div class="exp-cta-buttons">
+            <a href="project.html" class="exp-btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Akash_Kanabur-Resume.pdf" target="_blank" rel="noopener" class="exp-btn-secondary">Download Resume <i class="fa-solid fa-download"></i></a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/experience.js"></script>
+</body>
+
+</html>

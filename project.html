@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contact-overlay.css">
+    <link rel="icon" type="image" href="images/loading(1).png">
+    <title>My Projects</title>
+</head>
+
+<body>
+
+
+
+    <!-- Particle Background -->
+    <div class="bg-particles-wrap">
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="Akash-Final.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+        <a href="mailto:akashkanabur@gmail.com" class="contact_btn">Contact Me</a>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <div class="projects-hero">
+        <h1>My Projects</h1>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+        <div class="filter-buttons">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="app-dev">App Development</button>
+            <button type="button" class="filter-btn" data-filter="web-dev">Backend/Microservices</button>
+            <button type="button" class="filter-btn" data-filter="game-dev">Game Development</button>
+        </div>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Real-Time Chat Application -->
+        <div class="project-card" data-category="app-dev">
+            <div class="project-img-wrapper">
+                <img src="images/chat_app_mockup.png" alt="Real-Time Chat Application" class="project-img">
+                <div class="project-category-badge">App Development</div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Real-Time Chat Application</h3>
+                <p class="project-desc">A real-time messaging application designed for instant communication, featuring user authentication, one-to-one messaging, online/offline user presence, real-time message delivery, and a responsive chat interface.</p>
+                
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Socket.io</span>
+                    <span>Express</span>
+                    <span>MongoDB</span>
+                </div>
+                
+                <ul class="project-features">
+                    <li>Real-time messaging & instant delivery</li>
+                    <li>Secure user authentication & sessions</li>
+                    <li>Online/offline presence indicators</li>
+                    <li>Dedicated one-to-one conversations</li>
+                    <li>Responsive UI for mobile and desktop</li>
+                </ul>
+                
+                <div class="project-footer">
+                    <a href="https://github.com/akashkanabur/Real-Time-Chat-app" target="_blank" rel="noopener" class="project-btn github-btn">
+                        <i class="fa-brands fa-github"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employee Management Application -->
+        <div class="project-card" data-category="web-dev">
+            <div class="project-img-wrapper">
+                <img src="images/employee_dashboard_mockup.png" alt="Employee Management Application" class="project-img">
+                <div class="project-category-badge">Backend/Microservices</div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Employee Management Application</h3>
+                <p class="project-desc">A Spring Boot employee management backend providing secure authentication and role-based authorization along with employee CRUD operations, pagination, sorting, and REST APIs.</p>
+                
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Security</span>
+                    <span>JWT</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                </div>
+                
+                <ul class="project-features">
+                    <li>JWT Authentication & Security Integration</li>
+                    <li>Role-Based Authorization (Admin/User)</li>
+                    <li>Full Employee CRUD Operations</li>
+                    <li>Paginated & Sorted API Responses</li>
+                    <li>Containerized setup with Docker</li>
+                </ul>
+                
+                <div class="project-footer">
+                    <a href="https://github.com/akashkanabur/EmployeeManagment-JWT-" target="_blank" rel="noopener" class="project-btn github-btn">
+                        <i class="fa-brands fa-github"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Real-Time Order Processing System -->
+        <div class="project-card" data-category="web-dev">
+            <div class="project-img-wrapper">
+                <img src="images/kafka_order_mockup.png" alt="Real-Time Order Processing System" class="project-img">
+                <div class="project-category-badge">Backend/Microservices</div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Real-Time Order Processing System</h3>
+                <p class="project-desc">A microservices-based order processing system built with Spring Boot and Apache Kafka, demonstrating asynchronous event-driven communication between services for real-time order processing.</p>
+                
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Apache Kafka</span>
+                    <span>Microservices</span>
+                    <span>Docker</span>
+                </div>
+                
+                <ul class="project-features">
+                    <li>Asynchronous event-driven architecture</li>
+                    <li>Kafka Producer and Consumer Services</li>
+                    <li>Real-time order validation & stream</li>
+                    <li>Robust microservices communication</li>
+                    <li>Docker containerized environment</li>
+                </ul>
+                
+                <div class="project-footer">
+                    <a href="https://github.com/akashkanabur/OrderProcessing-" target="_blank" rel="noopener" class="project-btn github-btn">
+                        <i class="fa-brands fa-github"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vault Of Secrets -->
+        <div class="project-card" data-category="game-dev">
+            <div class="project-img-wrapper">
+                <img src="images/vaultofsecrets.png" alt="Vault Of Secrets" class="project-img">
+                <div class="project-category-badge">Game Development</div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Vault Of Secrets</h3>
+                <p class="project-desc">Adventurous game inspired from backrooms using UE5 Engine.</p>
+                
+                <div class="project-tags">
+                    <span>UE5</span>
+                    <span>Blueprints</span>
+                </div>
+                
+                <ul class="project-features">
+                    <li>Unreal Engine 5 high-fidelity graphics</li>
+                    <li>Interactive backroom horror atmosphere</li>
+                    <li>Custom blueprint-driven gameplay mechanics</li>
+                </ul>
+                
+                <div class="project-footer">
+                    <a href="images/VaultOfSecrets.mp4" target="_blank" rel="noopener" class="project-btn watch-btn">
+                        <i class="fa-solid fa-play"></i> Watch Gameplay
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- World of Secrets -->
+        <div class="project-card" data-category="game-dev">
+            <div class="project-img-wrapper">
+                <img src="images/worldofsecrets.png" alt="World of Secrets" class="project-img">
+                <div class="project-category-badge">Game Development</div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">World of Secrets</h3>
+                <p class="project-desc">Game based on the theme Defend your fort</p>
+                
+                <div class="project-tags">
+                    <span>UE5</span>
+                    <span>Blueprints</span>
+                </div>
+                
+                <ul class="project-features">
+                    <li>Strategic fort defense gameplay</li>
+                    <li>Wave-based enemy spawn mechanics</li>
+                    <li>Dynamic blueprints logic and controls</li>
+                </ul>
+                
+                <div class="project-footer">
+                    <a href="images/GameDev1.mp4" target="_blank" rel="noopener" class="project-btn watch-btn">
+                        <i class="fa-solid fa-play"></i> Watch Gameplay
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 25th Hour -->
+        <div class="project-card" data-category="game-dev">
+            <div class="project-img-wrapper">
+                <img src="images/lostintime.png" alt="25th Hour" class="project-img">
+                <div class="project-category-badge">Game Development</div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">25th Hour</h3>
+                <p class="project-desc">Game based on the theme Lost in time</p>
+                
+                <div class="project-tags">
+                    <span>UE5</span>
+                    <span>Blueprints</span>
+                </div>
+                
+                <ul class="project-features">
+                    <li>Time manipulation gameplay mechanics</li>
+                    <li>Immersive time-travel narrative elements</li>
+                    <li>Unreal Engine 5 level design and blueprints</li>
+                </ul>
+                
+                <div class="project-footer">
+                    <a href="https://youtu.be/u5mftgZ56WY" target="_blank" rel="noopener" title="Watch 25th Hour Gameplay" class="project-btn watch-btn">
+                        <i class="fa-solid fa-play"></i> Watch Gameplay
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/project.js"></script>
+
+
+</body>
+
+</html>

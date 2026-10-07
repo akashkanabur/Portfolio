@@ -1,0 +1,339 @@
+/* ====================================================== Hackathon Page Styles ====================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(45deg, #0e3771, #ffffff, #8e8e8e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 1000;
+    font-family: "SF Pro";
+}
+
+.nav_logo {
+    width: 13%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav_logo img {
+    width: 230%;
+    height: 230%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 650;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f78c00;
+}
+
+nav a.contact_btn {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    transform-origin: center;
+    transition: .5s ease;
+}
+
+nav a.contact_btn:hover {
+    transform: scaleX(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+}
+
+/* Main Content */
+.main-content {
+    padding: 120px 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hackathon-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hackathon-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f78c00;
+    padding-bottom: 0.5rem;
+}
+
+.hackathon-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.team-images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.team-member-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.image-placeholder-opposite,
+.image-placeholder-extra {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder-opposite img,
+.image-placeholder-extra img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-placeholder-opposite img:hover,
+.image-placeholder-extra img:hover {
+    transform: scale(1.05);
+}
+
+/* ====================================================== Responsive Design ====================================================== */
+
+/* Tablet Styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 50px;
+    }
+    
+    nav ul li {
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+    }
+    
+    nav a.contact_btn {
+        width: 130px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+    
+    .main-content {
+        padding: 100px 30px 40px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .hackathon-title {
+        font-size: 1.6rem;
+    }
+    
+    .team-member-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        height: 80px;
+        flex-wrap: wrap;
+    }
+    
+    .nav_logo {
+        width: 20%;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 8px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    nav a.contact_btn {
+        width: 120px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    
+    .main-content {
+        padding: 100px 20px 30px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .hackathon-section {
+        padding: 1.5rem;
+    }
+    
+    .hackathon-title {
+        font-size: 1.4rem;
+    }
+    
+    .hackathon-description {
+        font-size: 1rem;
+    }
+    
+    .team-images {
+        justify-content: center;
+    }
+    
+    .team-member-placeholder {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .image-group {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 0 15px;
+        height: 70px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav_logo {
+        width: 25%;
+        margin-bottom: 5px;
+    }
+    
+    nav ul {
+        gap: 8px;
+        margin: 5px 0;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    nav a.contact_btn {
+        width: 100px;
+        height: 35px;
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    
+    .main-content {
+        padding: 80px 15px 20px;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .hackathon-section {
+        padding: 1.2rem;
+    }
+    
+    .hackathon-title {
+        font-size: 1.2rem;
+    }
+    
+    .hackathon-description {
+        font-size: 0.9rem;
+    }
+    
+    .team-member-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+

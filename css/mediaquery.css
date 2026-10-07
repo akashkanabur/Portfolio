@@ -1,0 +1,72 @@
+@media screen and (max-width : 1440px) {
+
+    .toggle-menu{
+        display: none;
+    }
+    .herobox_image{
+        width: 40%;
+    }
+    .herobox_image img{
+        transform: scale(0.9);
+    }
+
+    .herobox .passion_2 a{
+        font-size: 100px;
+    }
+    .herobox .passion_2_outline a{
+        font-size: 100px;
+    }
+    .herobox p{
+        font-size: 18px;
+        left: 15%;
+        bottom: 20%;
+    }
+    .herobox a.view_project_btn {
+        left: auto;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+
+    nav a.contact_btn{
+        width: 140px;
+        font-size: 15px;
+        height: 45px;
+    }
+    .herobox .intro {
+        font-size: 20px;
+        width: 90%;
+    }
+    .herobox .passion_1 a{
+        font-size: 90px;
+    }
+    .herobox .passion_1_outline a{
+        font-size: 90px;
+    }
+    .herobox .passion_2{
+        width: 80%;
+    }
+    .herobox .passion_2 a{
+        font-size: 85px;  
+    }
+    .herobox .passion_2_outline a{
+        font-size: 85px; 
+    }
+    .herobox_image{
+        width: 40%;
+    }
+    .herobox_image img{
+        transform: scale(1);
+    }
+    .herobox p{
+        font-size: 18px;
+        left: 7%;
+        bottom: 20%;
+    }
+    .herobox a.view_project_btn,
+    .herobox a.view_resume_btn {
+        width: 160px;
+        font-size: 15px;
+    }
+}
+
